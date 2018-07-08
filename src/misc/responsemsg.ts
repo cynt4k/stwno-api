@@ -16,7 +16,7 @@ export let response = (res: Response, code: HttpCodes, msg?: string, data?: any)
     (data === undefined) ? responseMessage.data = "" : responseMessage.data = data;
     (msg === undefined) ? responseMessage.message = "" : responseMessage.message = msg;
 
-    res.setHeader("Content-Type", "application/json");
+    res.setHeader("Content-Type", "application/json; charset=utf-8");
     res.status(code).send(JSON.stringify(responseMessage));
 };
 

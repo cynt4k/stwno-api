@@ -20,7 +20,7 @@ public/css/main.css
 .env
 
 # Dependency directory
-src/node_modules
+node_modules
 bower_components
 
 # Editors
@@ -32,10 +32,10 @@ bower_components
 Thumbs.db
 
 # Ignore built ts files
-src/dist/**/*
+dist/**/*
 
 # Ignore test coverage
 coverage
 
 # Ignore test js files
-src/test/**/*.js
+test/**/*.js
