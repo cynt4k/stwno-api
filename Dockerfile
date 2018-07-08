@@ -1,4 +1,4 @@
-FROM node:8-slim
+FROM node:10-slim
 
 MAINTAINER Tobias Schneider, me@cynt4k.de
 
@@ -9,5 +9,7 @@ COPY package.json ./
 RUN npm install
 
 COPY . .
+
+EXPOSE 3000
 
 CMD ["npm", "start"]

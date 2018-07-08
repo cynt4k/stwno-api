@@ -21,7 +21,7 @@ import app from "./app";
     }
     try {
         const status = await app.listen(app.get("port"));
-        console.log("App is running at http://localhost:" + app.get("port") + " in " + app.get("env") + " mode");
+        console.log("Server status:\n\t- PORT: " + app.get("port") +"\n\t- Mode: " + app.get("env"));
     } catch (err) {
         console.log("Check your express server:  " + err);
         process.exit(1);

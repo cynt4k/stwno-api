@@ -15,6 +15,7 @@ export namespace InitDb {
     export let init = async (url: string): Promise<any> => new Promise(async (resolve, reject) => {
         rp.defaults({ encoding: "latin1" });
         baseUrl = url;
+        console.log("Fetching data ...");
         try {
             const res = await fetchData(false);
             schedule.scheduleJob("* */1 * * *", async () => {
