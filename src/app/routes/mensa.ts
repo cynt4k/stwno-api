@@ -7,6 +7,7 @@ export namespace MensaRoute {
         app.get("/mensa/names", MensaController.getMensaNames);
         app.get("/mensa/:id", MensaController.getMensaById);
         app.get("/mensa/:id/food/", MensaController.getFoodByMensa);
+        app.get("/mensa/:id/food/today", MensaController.getFoodByMensaToday);
         app.get("/mensa/:id/food/:day", MensaController.getFoodByMensaAndDay);
     }
 }

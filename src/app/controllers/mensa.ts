@@ -82,4 +82,25 @@ export namespace MensaController {
             return next(err);
         }
     };
+
+    export let getFoodByMensaToday = async (req: Request, res: Response, next: NextFunction) => {
+      let params = req.params;
+      let today = new Date();
+      try {
+          const data = await db.findDaysByMensaId(params.id);
+          if (!data) {
+              return response(res, HttpCodes.NotFound, "Mensa not found");
+          }
+
+          for (let day of data) {
+              const date = day["date"];
+              if (date.getFullYear() === today.getFullYear() && date.getMonth() === today.getMonth() && date.getDate() === today.getDate()) {
+                  return response(res, HttpCodes.OK, "OK", day.food);
+              }
+          }
+          return response(res, HttpCodes.NotFound, "No mensa food today");
+      } catch (err) {
+          return next(err);
+      }
+    };
 }
