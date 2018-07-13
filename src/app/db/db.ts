@@ -18,7 +18,7 @@ export namespace db {
     };
 
     export let getMensas = (): IMensa[] => {
-        return data;
+        return <IMensa[]>JSON.parse(JSON.stringify(data));
     };
 
     export let getMensaNames = (): string[] => {
@@ -38,11 +38,11 @@ export namespace db {
     };
 
     export let getMensaById = (id: string): Promise<any> => new Promise((resolve, reject) => {
-        for (let mensa of data) {
+        let tmpMensas: IMensa[] = <IMensa[]>JSON.parse(JSON.stringify(data));
+        for (let mensa of tmpMensas) {
             if (mensa.id == id) {
-                let ret: IMensa = {...mensa};
-                delete ret.day;
-                return resolve(ret);
+                delete mensa.day;
+                return resolve(mensa);
             }
         }
         resolve();

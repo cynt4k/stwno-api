@@ -4,7 +4,7 @@
   "description": "API for the stwno mensa",
   "main": "dist/server.js",
   "scripts": {
-    "postinstall": "tsc -p ./app",
+    "postinstall": "tsc",
     "watch": "tsc -w -p ./app",
     "debug": "nodemon --watch ./dist --inspect=0.0.0.0:5858 --nolazy ./dist/server.js",
     "docker-debug": "docker-compose up",
