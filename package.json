@@ -1,0 +1,19 @@
+{
+  "name": "stwno-api",
+  "version": "1.0.0",
+  "description": "API for the STWNO Mensa",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cynt4k/stwno-api.git"
+  },
+  "author": "cynt4k",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cynt4k/stwno-api/issues"
+  },
+  "homepage": "https://github.com/cynt4k/stwno-api#readme"
+}
