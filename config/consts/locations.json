@@ -1,0 +1,100 @@
+{
+    "ur": {
+        "shortTag": "UNI-R",
+        "translations": {
+            "de": "Universität Regensburg",
+            "en": "University Regensburg"
+        }
+    },
+    "ur-guest": {
+        "shortTag": "UNI-R-Gs",
+        "translations": {
+            "de": "Universität Regensburg Gästesaal",
+            "en": "University Regensburg Guestroom"
+        }
+    },
+    "ur-pt": {
+        "shortTag": "Cafeteria-PT",
+        "translations": {
+            "de": "Universität Regensburg Cafeteria PT",
+            "en": "University Regensburg cafeteria PT"
+        }
+    },
+    "ur-chemie": {
+        "shortTag": "Cafeteria-Chemie",
+        "translations": {
+            "de": "Universität Regensburg Cafeteria Chemie",
+            "en": "University Regensburg cafeteria chemie"
+        }
+    },
+    "ur-sport": {
+        "shortTag": "Cafeteria-Sport",
+        "translations": {
+            "de": "Universität Regensburg Cafeteria Sport",
+            "en": "University Regensburg cafeteria sport"
+        }
+    },
+    "hsr-day": {
+        "shortTag": "HS-R-tag",
+        "translations": {
+            "de": "OTH Regensburg Tag",
+            "en": "OTH Regensburg day"
+        }
+    },
+    "hsr-evening": {
+        "shortTag": "HS-R-abend",
+        "translations": {
+            "de": "OTH Regensburg Abend",
+            "en": "OTH Regensburg evening"
+        }
+    },
+    "hsr-pruef": {
+        "shortTag": "Cafeteria-Pruefening",
+        "translations": {
+            "de": "OTH Regensburg Cafeteria Prüfening",
+            "en": "OTH Regensburg cafeteria Prüfening"
+        }
+    },
+    "up": {
+        "shortTag": "Univerisität Parsberg",
+        "translations": {
+            "de": "Universität Parsberg",
+            "en": "University Parsberg"
+        }
+    },
+    "up-nikolakloster": {
+        "shortTag": "Cafeteria-Nikolakloster",
+        "translations": {
+            "de": "Universität Parsberg Cafeteria Nikolakloster",
+            "en": "University Parsberg cafeteria Nikolakloster"
+        }
+    },
+    "hsd": {
+        "shortTag": "HS-DEG",
+        "translations": {
+            "de": "Hochschule Deggendorf",
+            "en": "UNiversity Deggendorf"
+        }
+    },
+    "hsl": {
+        "shortTag": "HS-LA",
+        "translations": {
+            "de": "Hochschule Landshut",
+            "en": "University Landshut"
+        }
+    },
+    "hss": {
+        "shortTag": "HS-RA",
+        "translations": {
+            "de": "Hochschule Straubing",
+            "en": "University Straubing"
+        }
+    },
+    "hspf": {
+        "shortTag": "HS-PAN",
+        "translations": {
+            "de": "Hochschule Pfarrkirchen",
+            "en": "University Pfarrkirchen"
+        }
+    }
+}

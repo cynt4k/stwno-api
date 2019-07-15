@@ -4,6 +4,11 @@ export interface IExpressConfig {
     version: string;
 }
 
+export interface IMensaConfig {
+    baseUrl: string;
+}
+
 export interface IConfig {
     express: IExpressConfig;
+    mensa: IMensaConfig;
 }

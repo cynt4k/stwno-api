@@ -40,7 +40,8 @@
     "paths": {
       // "@home/core/*": ["core/*"],
       // "@home/types/*": ["types/*"],
-      "@home/*": ["src/*"]
+      "@home/*": ["src/*"],
+      "@const/*": ["config/consts/*"]
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     "typeRoots": [

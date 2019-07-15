@@ -1,6 +1,6 @@
 import { ErrorCode } from '@home/error';
 
-export class AuthError extends Error {
+export class MensaError extends Error {
     private code?: ErrorCode;
 
     constructor(message: string, code?: ErrorCode) {

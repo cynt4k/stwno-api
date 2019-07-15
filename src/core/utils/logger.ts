@@ -1,5 +1,5 @@
 import log4js from 'log4js';
-import { AuthError, ErrorCode } from '@home/error';
+import { MensaError, ErrorCode } from '@home/error';
 
 export namespace Logger {
     let isInitialized = false;
@@ -34,7 +34,7 @@ export namespace Logger {
 
     const checkInitialized = () => {
         if (!isInitialized) {
-            throw new AuthError('Logger not initialized', ErrorCode.LOGGER_NOT_INITIALIZED);
+            throw new MensaError('Logger not initialized', ErrorCode.LOGGER_NOT_INITIALIZED);
         }
     };
 

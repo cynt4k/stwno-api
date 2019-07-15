@@ -1,0 +1,72 @@
+[
+    {
+        "key": "1",
+        "value": {
+            "de": "mit Farbstoff",
+            "en": "with colorant"
+        }
+    },
+    {
+        "key": "2",
+        "value": {
+            "de": "mit Konservierungsstoff",
+            "en": "with preservative"
+        }
+    },
+    {
+        "key": "3",
+        "value": {
+            "de": "mit Antioxidationsmittel",
+            "en": "with antioxidant"
+        }
+    },
+    {
+        "key": "4",
+        "value": {
+            "de": "mit Geschmacksverstärker",
+            "en": "with flavor enhancer"
+        }
+    },
+    {
+        "key": "5",
+        "value": {
+            "de": "geschwefelt",
+            "en": "sulphuretted"
+        }
+    },
+    {
+        "key": "6",
+        "value": {
+            "de": "geschwärzt",
+            "en": "blackened"
+        }
+    },
+    {
+        "key": "7",
+        "value": {
+            "de": "gewachst",
+            "en": "waxed"
+        }
+    },
+    {
+        "key": "8",
+        "value": {
+            "de": "mit Phosphat",
+            "en": "with phosphate"
+        }
+    },
+    {
+        "key": "9",
+        "value": {
+            "de": "mit Süßungsmittel Saccharin",
+            "en": "with sweetener saccharin"
+        }
+    },
+    {
+        "key": "10",
+        "value": {
+            "de": "mit Süßungsmittel Acesulfam",
+            "en": "with sweetener acesulfame"
+        }
+    }
+]

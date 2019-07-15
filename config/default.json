@@ -2,5 +2,8 @@
     "express": {
         "port": 3000,
         "version": "v1"
+    },
+    "mensa": {
+        "baseUrl": "https://www.stwno.de/infomax/daten-extern/csv/"
     }
 }
