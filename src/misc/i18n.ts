@@ -1,0 +1,5 @@
+
+export enum I18n {
+    INFO_SUCCESS = 'OK',
+    WARN_VAL_INVALID_PARAMS = 'W_VAL_INVALID_PARAMS'
+}
