@@ -26,13 +26,16 @@
   "dependencies": {
     "compression": "^1.7.4",
     "config": "^3.2.0",
+    "csv-parse": "^4.4.3",
     "express": "^4.17.1",
     "express-validator": "^6.1.1",
     "http": "0.0.0",
+    "https": "^1.0.0",
     "lodash": "^4.17.14",
     "log4js": "^4.5.1",
     "method-override": "^3.0.0",
-    "module-alias": "^2.2.0"
+    "module-alias": "^2.2.0",
+    "url-join": "^4.0.1"
   },
   "devDependencies": {
     "@types/body-parser": "^1.17.0",
@@ -43,6 +46,7 @@
     "@types/log4js": "^2.3.5",
     "@types/method-override": "0.0.31",
     "@types/module-alias": "^2.0.0",
+    "@types/url-join": "^4.0.0",
     "tslint": "^5.18.0",
     "typescript": "^3.5.3"
   }

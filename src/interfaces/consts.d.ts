@@ -13,9 +13,11 @@ export interface IConstIngredients {
     translations:ITranslation
 }
 
+export interface IConstLocation {
+    shortTag: string;
+    translations: ITranslation;
+}
+
 export interface IConstLocations {
-    [id: string]: {
-        shortTag: string;
-        translations: ITranslation;
-    };
+    [id: string]: IConstLocation;
 }

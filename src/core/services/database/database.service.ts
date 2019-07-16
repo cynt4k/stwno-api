@@ -20,13 +20,24 @@ export namespace DatabaseService {
         }
     };
 
-    export const getMealsForLocation = async (locationId: string): Promise<IMeal[]> => {
+    const getLocation = (locationId: string): IDbMensa => {
         checkLocation(locationId);
 
-        const mensa = _.filter(data, (elem) => {
+        return _.filter(data, (elem) => {
             if (elem.id === locationId) return true;
             return false;
         })[0];
+    };
+
+    export const updateMealsForLocation = async (locationId: string, meals: IMeal[]): Promise<void> => {
+        const mensa = getLocation(locationId);
+
+        mensa.meals = meals;
+        return Promise.resolve();
+    };
+
+    export const getMealsForLocation = async (locationId: string): Promise<IMeal[]> => {
+        const mensa = getLocation(locationId);
 
         return Promise.resolve(mensa.meals);
     };
