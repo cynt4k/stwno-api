@@ -9,24 +9,34 @@ export namespace DatabaseService {
 
     };
 
-    const checkLocation = (locationId: string): void => {
+    const checkLocation = (locationId: string, exist: boolean): void => {
         const found = _.find(data, (elem) => {
             if (elem.id === locationId) return true;
             return false;
         });
 
-        if (!found) {
-            throw new MensaError('Location not found', ErrorCode.LOCATION_NOT_FOUND);
+        if (!found && exist) {
+            throw new MensaError(`Location not found - ${locationId}`, ErrorCode.LOCATION_NOT_FOUND);
+        }
+
+        if (found && !exist) {
+            throw new MensaError(`Location found - ${locationId}`, ErrorCode.LOCATION_FOUND);
         }
     };
 
     const getLocation = (locationId: string): IDbMensa => {
-        checkLocation(locationId);
+        checkLocation(locationId, true);
 
         return _.filter(data, (elem) => {
             if (elem.id === locationId) return true;
             return false;
         })[0];
+    };
+
+    export const setLocation = async (mensa: IDbMensa): Promise<void> => {
+        checkLocation(mensa.id, false);
+
+        data.push(mensa);
     };
 
     export const updateMealsForLocation = async (locationId: string, meals: IMeal[]): Promise<void> => {

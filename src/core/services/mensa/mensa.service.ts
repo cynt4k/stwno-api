@@ -1,9 +1,10 @@
 import http from 'http';
 import _ from 'lodash';
-import { IMensaConfig, IMeal, IDbMensa, IConstLocation, ICrawlerMenu } from '@home/interfaces';
+import { IMensaConfig, IMeal, IDbMensa, IConstLocation, ICrawlerMenu, IMealIngredients, ITranslation } from '@home/interfaces';
 const LOCATIONS = require('../../../../config/consts/locations.json');
 import { MensaError, ErrorCode } from '@home/error';
 import { Crawler } from '@home/core/utils';
+import { DatabaseService } from '../database';
 
 
 export namespace MensaService {
@@ -27,8 +28,23 @@ export namespace MensaService {
     const getData = async (): Promise<void> => {
         _.keys(LOCATIONS).forEach(async (elem) => {
             const menus = await getDataForLocation(elem);
-
+            await DatabaseService.setLocation({
+                id: elem,
+                name: LOCATIONS[elem].translations as ITranslation,
+                meals: []
+            });
+            const menusForDatabase = _.map(menus, (menu): IMeal => {
+                return {
+                    date: menu.date,
+                    ingredients: _.map(menu.ingredients, (ingredient): IMealIngredients => ({key: ingredient.key, name: ingredient.translations})),
+                    name: menu.name,
+                    price: menu.price,
+                    type: menu.lunchType
+                };
+            });
+            await DatabaseService.updateMealsForLocation(elem, menusForDatabase);
         });
+        return Promise.resolve();
     };
 
     const getDataForLocation = async (locationId: string): Promise<ICrawlerMenu[]> => {
