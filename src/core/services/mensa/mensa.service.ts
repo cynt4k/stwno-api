@@ -36,7 +36,7 @@ export namespace MensaService {
             const menusForDatabase = _.map(menus, (menu): IMeal => {
                 return {
                     date: menu.date,
-                    ingredients: _.map(menu.ingredients, (ingredient): IMealIngredients => ({key: ingredient.key, name: ingredient.translations})),
+                    ingredients: _.map(menu.ingredients, (ingredient): IMealIngredients => ({key: ingredient.key, name: ingredient.value})),
                     name: menu.name,
                     price: menu.price,
                     type: menu.lunchType

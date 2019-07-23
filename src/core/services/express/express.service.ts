@@ -5,6 +5,7 @@ import bodyParser from 'body-parser';
 import methodOverride from 'method-override';
 import { Logger, ExpressHandler } from '@home/core/utils';
 import { IExpressConfig } from '@home/interfaces/config';
+import { MensaRouter } from '@home/routes';
 
 export namespace ExpressService {
     let config: IExpressConfig;
@@ -29,6 +30,8 @@ export namespace ExpressService {
         app.get('/', (req: Request, res: Response, next: NextFunction) => {
             res.status(200).send('OK');
         });
+
+        app.use('/mensa', MensaRouter);
 
 
         app.use('*', ExpressHandler.express);

@@ -10,7 +10,7 @@ export interface IConstDays {
 
 export interface IConstIngredients {
     key: string;
-    translations:ITranslation
+    value:ITranslation
 }
 
 export interface IConstLocation {
