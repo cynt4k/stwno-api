@@ -6,6 +6,7 @@ export interface IExpressConfig {
 
 export interface IMensaConfig {
     baseUrl: string;
+    attributeOrder: string[];
 }
 
 export interface IConfig {

@@ -1,6 +1,6 @@
 import http from 'http';
 import _ from 'lodash';
-import { IMensaConfig, IMeal, IDbMensa, IConstLocation } from '@home/interfaces';
+import { IMensaConfig, IMeal, IDbMensa, IConstLocation, ICrawlerMenu } from '@home/interfaces';
 const LOCATIONS = require('../../../../config/consts/locations.json');
 import { MensaError, ErrorCode } from '@home/error';
 import { Crawler } from '@home/core/utils';
@@ -12,7 +12,7 @@ export namespace MensaService {
 
     export const init = async (c: IMensaConfig): Promise<void> => {
         config = c;
-        crawler = new Crawler(config.baseUrl);
+        crawler = new Crawler(config.baseUrl, config.attributeOrder);
         await getData();
         return Promise.resolve();
     };
@@ -26,11 +26,12 @@ export namespace MensaService {
 
     const getData = async (): Promise<void> => {
         _.keys(LOCATIONS).forEach(async (elem) => {
-            await getDataForLocation(elem);
+            const menus = await getDataForLocation(elem);
+
         });
     };
 
-    const getDataForLocation = async (locationId: string): Promise<any[]> => {
+    const getDataForLocation = async (locationId: string): Promise<ICrawlerMenu[]> => {
         const data: IDbMensa[] = [];
 
         checkLocationId(locationId);

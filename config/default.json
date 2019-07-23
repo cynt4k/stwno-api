@@ -4,6 +4,7 @@
         "version": "v1"
     },
     "mensa": {
-        "baseUrl": "https://www.stwno.de/infomax/daten-extern/csv/"
+        "baseUrl": "https://www.stwno.de/infomax/daten-extern/csv/",
+        "attributeOrder": [ "date", "weekday", "lunchType", "name", "category", "price", "student", "employee", "guest" ]
     }
 }

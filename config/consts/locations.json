@@ -56,17 +56,17 @@
         }
     },
     "up": {
-        "shortTag": "Univerisität Parsberg",
+        "shortTag": "UNI-P",
         "translations": {
-            "de": "Universität Parsberg",
-            "en": "University Parsberg"
+            "de": "Universität Passau",
+            "en": "University Passau"
         }
     },
     "up-nikolakloster": {
         "shortTag": "Cafeteria-Nikolakloster",
         "translations": {
-            "de": "Universität Parsberg Cafeteria Nikolakloster",
-            "en": "University Parsberg cafeteria Nikolakloster"
+            "de": "Universität Passau Cafeteria Nikolakloster",
+            "en": "University Passau cafeteria Nikolakloster"
         }
     },
     "hsd": {
@@ -84,7 +84,7 @@
         }
     },
     "hss": {
-        "shortTag": "HS-RA",
+        "shortTag": "HS-SR",
         "translations": {
             "de": "Hochschule Straubing",
             "en": "University Straubing"
