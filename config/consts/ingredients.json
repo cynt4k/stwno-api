@@ -1,0 +1,345 @@
+[
+    {
+        "key": "1",
+        "value": {
+            "de": "mit Farbstoff",
+            "en": "with colorant"
+        }
+    },
+    {
+        "key": "2",
+        "value": {
+            "de": "mit Konservierungsstoff",
+            "en": "with preservative"
+        }
+    },
+    {
+        "key": "3",
+        "value": {
+            "de": "mit Antioxidationsmittel",
+            "en": "with antioxidant"
+        }
+    },
+    {
+        "key": "4",
+        "value": {
+            "de": "mit Geschmacksverstärker",
+            "en": "with flavor enhancer"
+        }
+    },
+    {
+        "key": "5",
+        "value": {
+            "de": "geschwefelt",
+            "en": "sulphuretted"
+        }
+    },
+    {
+        "key": "6",
+        "value": {
+            "de": "geschwärzt",
+            "en": "blackened"
+        }
+    },
+    {
+        "key": "7",
+        "value": {
+            "de": "gewachst",
+            "en": "waxed"
+        }
+    },
+    {
+        "key": "8",
+        "value": {
+            "de": "mit Phosphat",
+            "en": "with phosphate"
+        }
+    },
+    {
+        "key": "9",
+        "value": {
+            "de": "mit Süßungsmittel Saccharin",
+            "en": "with sweetener saccharin"
+        }
+    },
+    {
+        "key": "10",
+        "value": {
+            "de": "mit Süßungsmittel Acesulfam",
+            "en": "with sweetener acesulfame"
+        }
+    },
+    {
+        "key": "11",
+        "value": {
+            "de": "mit Süßungsmittel Cyclamat",
+            "en": "with sweetener cyclamat"
+        }
+    },
+    {
+        "key": "12",
+        "value": {
+            "de": "mit Süßungsmittel Acesulfam",
+            "en": "with sweetener acesulfame"
+        }
+    },
+    {
+        "key": "13",
+        "value": {
+            "de": "chininhalting",
+            "en": "quinine"
+        }
+    },
+    {
+        "key": "14",
+        "value": {
+            "de": "coffeinhalting",
+            "en": "caffeinated"
+        }
+    },
+    {
+        "key": "15",
+        "value": {
+            "de": "gentechnisch verändert",
+            "en": "genetic modified"
+        }
+    },
+    {
+        "key": "16",
+        "value": {
+            "de": "enthält Sulfite",
+            "en": "contains sulfites"
+        }
+    },
+    {
+        "key": "17",
+        "value": {
+            "de": "enthält Phentylalanin",
+            "en": "contains phenylalanine"
+        }
+    },
+    {
+        "key": "A",
+        "value": {
+            "de": "Gluten",
+            "en": "gluten"
+        }
+    },
+    {
+        "key": "AA",
+        "value": {
+            "de": "Weizen",
+            "en": "wheat"
+        }
+    },
+    {
+        "key": "AB",
+        "value": {
+            "de": "Roggen",
+            "en": "rye"
+        }
+    },
+    {
+        "key": "AC",
+        "value": {
+            "de": "Gerste",
+            "en": "barley"
+        }
+    },
+    {
+        "key": "AD",
+        "value": {
+            "de": "Hafer",
+            "en": "oats"
+        }
+    },
+    {
+        "key": "AE",
+        "value": {
+            "de": "Dinkel",
+            "en": "spelt"
+        }
+    },
+    {
+        "key": "AF",
+        "value": {
+            "de": "Kamut",
+            "en": "kamut"
+        }
+    },
+    {
+        "key": "B",
+        "value": {
+            "de": "Krebstiere",
+            "en": "crustaceans"
+        }
+    },
+    {
+        "key": "C",
+        "value": {
+            "de": "Eier",
+            "en": "eggs"
+        }
+    },
+    {
+        "key": "D",
+        "value": {
+            "de": "Fisch",
+            "en": "fish"
+        }
+    },
+    {
+        "key": "E",
+        "value": {
+            "de": "Erdnüsse",
+            "en": "peanuts"
+        }
+    },
+    {
+        "key": "F",
+        "value": {
+            "de": "Soja",
+            "en": "soja"
+        }
+    },
+    {
+        "key": "G",
+        "value": {
+            "de": "Milch und Milchprodukte",
+            "en": "milk and milkproducts"
+        }
+    },
+    {
+        "key": "H",
+        "value": {
+            "de": "Schalenfrüchte",
+            "en": "peel fruits"
+        }
+    },
+    {
+        "key": "HA",
+        "value": {
+            "de": "Mandeln",
+            "en": "almonds"
+        }
+    },
+    {
+        "key": "HB",
+        "value": {
+            "de": "Haselnuss",
+            "en": "hazelnut"
+        }
+    },
+    {
+        "key": "HC",
+        "value": {
+            "de": "Walnuss",
+            "en": "walnut"
+        }
+    },
+    {
+        "key": "HD",
+        "value": {
+            "de": "Cashew",
+            "en": "cashew"
+        }
+    },
+    {
+        "key": "HE",
+        "value": {
+            "de": "Pekannuss",
+            "en": "pecan"
+        }
+    },
+    {
+        "key": "HF",
+        "value": {
+            "de": "Paranuss",
+            "en": "brazil nuts"
+        }
+    },
+    {
+        "key": "HG",
+        "value": {
+            "de": "Pistazie",
+            "en": "pistachio"
+        }
+    },
+    {
+        "key": "HH",
+        "value": {
+            "de": "Macadamianuss",
+            "en": "macadamia nuts"
+        }
+    },
+    {
+        "key": "HI",
+        "value": {
+            "de": "Queenslandnuss",
+            "en": "queenslandnut"
+        }
+    },
+    {
+        "key": "I",
+        "value": {
+            "de": "Sellerie",
+            "en": "celery"
+        }
+    },
+    {
+        "key": "J",
+        "value": {
+            "de": "Senf",
+            "en": "mustard"
+        }
+    },
+    {
+        "key": "K",
+        "value": {
+            "de": "Sesamsamen",
+            "en": "sesame seeds"
+        }
+    },
+    {
+        "key": "L",
+        "value": {
+            "de": "Schwefeldioxid und Sulfite",
+            "en": "sulfur dioxide und sulfites"
+        }
+    },
+    {
+        "key": "M",
+        "value": {
+            "de": "Lupinen",
+            "en": "lupins"
+        }
+    },
+    {
+        "key": "Melone-Apfel-Gurke",
+        "value": {
+            "de": "Melone Apfel Gurke",
+            "en": "melon apple cucumber"
+        }
+    },
+    {
+        "key": "N",
+        "value": {
+            "de": "Weichtiere",
+            "en": "molluscs"
+        }
+    },
+    {
+        "key":  "O",
+        "value": {
+            "de": "Nitrat",
+            "en": "nitrate"
+        }
+    },
+    {
+        "key": "P",
+        "value": {
+            "de": "Nitritpökelsalz",
+            "en": "nitrite"
+        }
+    }
+]

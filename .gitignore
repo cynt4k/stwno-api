@@ -20,22 +20,26 @@ public/css/main.css
 .env
 
 # Dependency directory
-src/node_modules
-src/bower_components
+node_modules
 
 # Editors
 .idea
 *.iml
+.vscode
 
 # OS metadata
 .DS_Store
 Thumbs.db
 
 # Ignore built ts files
-src/dist/**/*
+dist/**/*
 
 # Ignore test coverage
 coverage
 
 # Ignore test js files
 src/test/**/*.js
+
+# Ignore dev and prod config
+config/dev.json
+config/prd.json

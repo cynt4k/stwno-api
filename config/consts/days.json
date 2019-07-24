@@ -1,0 +1,51 @@
+{
+    "monday": {
+        "shortTag": "mo",
+        "translations": {
+            "de": "Montag",
+            "en": "Monday"
+        }
+    },
+    "tuesday": {
+        "shortTag": "di",
+        "translations": {
+            "de": "Dienstag",
+            "en": "Tuesday"
+        }
+    },
+    "wednesday": {
+        "shortTag": "mi",
+        "translations": {
+            "de": "Mittwoch",
+            "en": "Wednesday"
+        }
+    },
+    "thursday": {
+        "shortTag": "do",
+        "translations": {
+            "de": "Donnerstag",
+            "en": "Thursday"
+        }
+    },
+    "friday": {
+        "shortTag": "fr",
+        "translations": {
+            "de": "Freitag",
+            "en": "Friday"
+        }
+    },
+    "saturday": {
+        "shortTag": "sa",
+        "translations": {
+            "de": "Samstag",
+            "en": "Saturday"
+        }
+    },
+    "sunday": {
+        "shortTag": "so",
+        "translations": {
+            "de": "Sonntag",
+            "en": "Sunday"
+        }
+    }
+}

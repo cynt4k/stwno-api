@@ -1,0 +1,53 @@
+{
+  "name": "stwno-api",
+  "version": "1.0.0",
+  "description": "API for the STWNO Mensa",
+  "main": "dist/index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "tslint": "tslint --project .",
+    "build": "npm run-script tsc && npm run-script tslint",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cynt4k/stwno-api.git"
+  },
+  "author": "cynt4k",
+  "license": "MIT",
+  "_moduleAliases": {
+    "@home": "./dist"
+  },
+  "bugs": {
+    "url": "https://github.com/cynt4k/stwno-api/issues"
+  },
+  "homepage": "https://github.com/cynt4k/stwno-api#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "config": "^3.2.0",
+    "csv-parse": "^4.4.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.1.1",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "lodash": "^4.17.14",
+    "log4js": "^4.5.1",
+    "method-override": "^3.0.0",
+    "module-alias": "^2.2.0",
+    "url-join": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/compression": "0.0.36",
+    "@types/config": "0.0.34",
+    "@types/express": "^4.17.0",
+    "@types/lodash": "^4.14.136",
+    "@types/log4js": "^2.3.5",
+    "@types/method-override": "0.0.31",
+    "@types/module-alias": "^2.0.0",
+    "@types/url-join": "^4.0.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
