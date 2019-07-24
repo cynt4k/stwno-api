@@ -315,6 +315,13 @@
         }
     },
     {
+        "key": "Melone-Apfel-Gurke",
+        "value": {
+            "de": "Melone Apfel Gurke",
+            "en": "melon apple cucumber"
+        }
+    },
+    {
         "key": "N",
         "value": {
             "de": "Weichtiere",

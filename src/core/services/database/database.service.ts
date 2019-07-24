@@ -56,7 +56,7 @@ export namespace DatabaseService {
         const allMeals = await getMealsForLocation(locationId);
 
         const meals = _.filter(allMeals, (elem) => {
-            if (elem.date === day) return true;
+            if (elem.date.getDay() === day.getDay()) return true;
             return false;
         });
 

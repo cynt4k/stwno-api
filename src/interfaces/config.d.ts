@@ -7,6 +7,7 @@ export interface IExpressConfig {
 export interface IMensaConfig {
     baseUrl: string;
     attributeOrder: string[];
+    refreshTime: number;
 }
 
 export interface IConfig {
