@@ -31,7 +31,7 @@ export namespace ExpressService {
             res.status(200).send('OK');
         });
 
-        app.use('/mensa', MensaRouter);
+        app.use(`/${config.version}/mensa`, MensaRouter);
 
 
         app.use('*', ExpressHandler.express);

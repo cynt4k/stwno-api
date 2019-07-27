@@ -2,7 +2,7 @@ import _ from 'lodash';
 import { IMensaConfig, IMeal, IDbMensa, IConstLocation, ICrawlerMenu, IMealIngredients, ITranslation, IMensa } from '@home/interfaces';
 const LOCATIONS = require('../../../../config/consts/locations.json');
 import { MensaError, ErrorCode } from '@home/error';
-import { Crawler } from '@home/core/utils';
+import { Crawler, Logger } from '@home/core/utils';
 import { DatabaseService } from '../database';
 
 
@@ -128,9 +128,17 @@ export namespace MensaService {
 
         const location = <IConstLocation> LOCATIONS[locationId];
 
-        const menu = await crawler.getMenu(location.shortTag, getCurrentWeek());
-
-        return Promise.resolve(menu);
+        try {
+            const menu = await crawler.getMenu(location.shortTag, getCurrentWeek());
+            return Promise.resolve(menu);
+        } catch (e) {
+            if (e instanceof MensaError) {
+                Logger.warn(e.message);
+                return Promise.resolve([]);
+            } else {
+                return Promise.reject(e);
+            }
+        }
     };
 
     const getCurrentWeek = (): number => {
