@@ -15,7 +15,7 @@ COPY --from=builder /opt/stwno/ /opt/stwno/
 
 WORKDIR /opt/stwno
 
-RUN ls -alh && npm install --production
+RUN npm install --production
 
 ENV NODE_ENV prd
 
