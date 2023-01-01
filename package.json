@@ -26,7 +26,7 @@
   "homepage": "https://github.com/cynt4k/stwno-api#readme",
   "dependencies": {
     "compression": "^1.7.4",
-    "config": "^3.2.0",
+    "config": "^3.3.8",
     "csv-parse": "^4.4.3",
     "express": "^4.17.1",
     "express-validator": "^6.1.1",
